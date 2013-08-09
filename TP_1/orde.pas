@@ -109,9 +109,9 @@ begin
 
 	writeln('Cantidad de comparaciones realizadas');
 	writeln('10 Elementos: ', cmp10);
-    writeln('100 Elementos: ', cmp100);
-    writeln('1000 Elementos: ', cmp1000);
-    writeln('10000 Elementos: ', cmp10000);
+	writeln('100 Elementos: ', cmp100);
+	writeln('1000 Elementos: ', cmp1000);
+	writeln('10000 Elementos: ', cmp10000);
 end;
 (* ====================================================================================== *)
 
