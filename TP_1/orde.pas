@@ -80,6 +80,18 @@ begin
 	Sort_Vector := cnt;
 end;
 
+(* Descripcion: Calcula las recuerrencias de forma analitica *)
+function Calc_Rec(N : Word): Word;
+var
+    i : Word;
+    c : Word;
+begin
+    c := 0;
+    for i := N downto 1 do
+        c := c + (i + 1) div 2 - 1 div i;
+    Calc_Rec := c;
+end;
+
 (*
 	Descripcion: Realizo una simulacion de N elementos
 				 y devuelvo la cantidad de comparaciones
@@ -108,11 +120,13 @@ begin
 	cmp10000 := Simu_N(10000);
 
 	writeln('Cantidad de comparaciones realizadas');
-	writeln('10 Elementos: ', cmp10);
-    writeln('100 Elementos: ', cmp100);
-    writeln('1000 Elementos: ', cmp1000);
-    writeln('10000 Elementos: ', cmp10000);
+	writeln(' SIMULACION                  ANALITICO');
+	writeln('10 Elementos: ', cmp10, '               ', Calc_Rec(10));
+	writeln('100 Elementos: ', cmp100, '             ', Calc_Rec(100));
+	writeln('1000 Elementos: ', cmp1000, '            ', Calc_Rec(1000));
+	writeln('10000 Elementos: ', cmp10000,'          ', Calc_Rec(10000));
 end;
+
 (* ====================================================================================== *)
 
 (* ==============================================
