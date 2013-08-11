@@ -12,3 +12,5 @@ dinámica.
 
 2)Automata
 -----------
+
+- Se a añadido un algoritmo que resuelve el problema usando string.
