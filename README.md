@@ -1,9 +1,10 @@
-Descripcion
+﻿Descripcion
 -----------
 
 El presente README se modificará y actualizará conforme al avance de la materia
 
 - Se encuentra disponible TP1 con el programa de ordenamiento.
+- esto es una modificacion runy
 
 Paquetes necesarios
 -------------------
