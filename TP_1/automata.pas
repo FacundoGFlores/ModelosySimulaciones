@@ -1,4 +1,4 @@
-program automata;
+﻿program automata;
 
 uses crt;
 
@@ -106,5 +106,5 @@ end;
 BEGIN
 	Randomize;
 	Simulacion;
-	Readln;
+	Readln;{Esto simula una pausa}
 END.
